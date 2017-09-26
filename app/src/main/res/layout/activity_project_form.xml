@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_project_from"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.codetrack.bscitians.ProjectForm">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--form controls here-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_view_border"
+            android:elevation="3dp"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                android:text="@string/project_from_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedbackheader"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:gravity="center"
+                android:padding="10dp"
+                />
+
+        </android.support.v7.widget.CardView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/userName"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+
+            >
+        </EditText>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userEmail"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/userPhone"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_phone_number"
+            android:inputType="phone"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            >
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"
+            android:layout_marginTop="5dp"/>
+        <Spinner
+            android:id="@+id/projectTypes"
+            android:layout_height="wrap_content"
+            android:prompt="@string/promptProjecttype"
+            android:layout_width="fill_parent"
+           android:entries="@array/projectTypeList"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            >
+
+        </Spinner>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"
+            android:layout_marginTop="5dp"/>
+        <Spinner
+            android:id="@+id/language"
+            android:layout_height="wrap_content"
+            android:prompt="@string/promptLaguages"
+            android:layout_width="fill_parent"
+            android:entries="@array/languages"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            >
+
+        </Spinner>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"
+            android:layout_marginTop="5dp"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:checkedButton="@+id/compelte"
+            android:layout_marginTop="15dp"
+            >
+        <TextView
+            android:text="@string/type_of_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            />
+            <RadioButton
+                android:id="@+id/guidance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance"
+                />
+
+            <RadioButton
+                android:id="@+id/compelte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/completeProj"
+                />
+        </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"/>
+        <EditText
+            android:id="@+id/projectDescription"
+            android:layout_height="wrap_content"
+            android:hint="@string/project_description"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            >
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EFF0F1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRequest"
+            android:text="@string/send_request"
+            android:textColor="#ffff"
+            android:background="?android:attr/colorFocusedHighlight"
+            android:textSize="@dimen/title"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

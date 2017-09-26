@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">BSCITIANS</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="papers">Question Papers</string>
+    <string name="notes">Study Notes</string>
+    <string name="pracs">Practicals</string>
+    <string name="tools">Tools</string>
+    <string name="typroject">TY Projects</string>
+    <string name="sem1">Semester 1</string>
+    <string name="sem2">Semester 2</string>
+    <string name="sem3">Semester 3</string>
+    <string name="sem4">Semester 4</string>
+    <string name="sem5">Semester 5</string>
+    <string name="sem6">Semester 6</string>
+    <string name="abtus">About Us</string>
+    <string name="rate">Rate Us</string>
+    <string name="share">Share Our App</string>
+    <string name="download">Download</string>
+    <string name="share1">Share</string>
+    <string name="refresh">Refresh</string>
+    <string name="setting">Setting</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="fy">First Year</string>
+    <string name="sy">Second Year</string>
+    <string name="ty">Third Year</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="appName">bscitians</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="about_us">TextView</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="resource">Special Thanks To  :\nAntara Chavan.\nTarang Jain.</string>
+    <string name="permission">Please enable permissions.</string>
+
+    <string name="project_from_header">Let us help you with your project</string>
+
+    <!--- project type -->
+    <string name="projecttype0">Select Project Type</string>
+    <string name="projecttype1">Website</string>
+    <string name="projecttype2">Desktop Application</string>
+    <string name="projecttype3">Android Apps</string>
+
+    <!--- languages-->
+    <string name="language0">Select Language</string>
+    <string name="language1">Java</string>
+    <string name="language2">Asp .net(C#)</string>
+    <string name="language3">Php</string>
+
+    <string name="promptProjecttype">Project Type</string>
+
+    <string name="promptLaguages">Language Preference</string>
+    <string name="powered_by_codetrack">Powered By:CodeTrack</string>
+
+
+    <string name="practicalsnote"> Note : \nPracticals May Differ From College to College .\nWe Have Collected All Practicals According to Mumbai University Syllabus and it Covers all Concepts .\nFor Any Other Help Regarding a Specific Practical , You Can Contact Us at thecodetrack@gmail.com </string>
+
+    <string name ="a">thecodetrack@gmail.com</string>
+    <string name="pdf_text_note">Refresh the Pdf if it Doesn\'t Loads AND You Can Also Download the PDF and View it Offline on Your Phone</string>
+    <string name="completeProj">Complete Project</string>
+    <string name="enter_email">Enter Email Id</string>
+    <string name="guidance">Guidance</string>
+    <string name="project_description">Project Description</string>
+    <string name="type_of_help">Select Type of Help Needed :</string>
+    <string name="send_request">Send Request</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="dl">Download</string>
+    <string name="sub">Subject</string>
+    <string name="turbo_c">Turbo C++\n(IM)</string>
+    <string name="_8085_stimulator_n_mpmc">8085 Stimulator\n(MPMC)</string>
+    <string name="notepad_n_wd">Notepad++\n(WD)</string>
+    <string name="turbo_c_n_cg">Turbo C++\n(CG)</string>
+    <string name="oracle_n_advanced_sql">Oracle\n(Advanced sql)</string>
+    <string name="turbo_c_n_oops">Turbo C++\n(Oops)</string>
+    <string name="codevision_n_es">Codevision\n(ES)</string>
+    <string name="java_jdk_1_7_n_java_ds">Java jdk 1.7\n(Java-ds)</string>
+    <string name="notepad_n_java_ds">Notepad++\n(Java-ds)</string>
+    <string name="proteus_n_es">Proteus\n(ES)</string>
+    <string name="java_jdk_32bit_n_advanced_java_ns">Java jdk\n(Advanced Java , NS)</string>
+    <string name="netbeans_n_advanced_java">Netbeans\n(Advanced java)</string>
+    <string name="redhat_os_n_linux">RedHat OS\n(Linux)</string>
+    <string name="visual_studio_n_asp_net">Visual Studio\n(Asp.net)</string>
+    <string name="matlab_n_gis">Matlab\n(GIS)</string>
+    <string name="oracle_11g_n_dw">Oracle 11g\n(DW)</string>
+    <string name="packet_tracer_n_it">Packet tracer\n(IT)</string>
+    <string name="qgis_n_gis">QGIS\n(GIS)</string>
+    <string name="star_uml_n_pm">Star UML\n(PM)</string>
+    <string name="there_is_nothing_here_yet">There is Nothing Here Yet !</string>
+    <string name="one">1</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="projectTypeList">
+        <item>@string/projecttype0</item>
+        <item>@string/projecttype1</item>
+        <item>@string/projecttype2</item>
+        <item>@string/projecttype3</item>
+
+    </string-array>
+
+    <string-array name="languages">
+        <item>@string/language0</item>
+        <item>@string/language1</item>
+        <item>@string/language2</item>
+        <item>@string/language3</item>
+    </string-array>
+
+</resources>

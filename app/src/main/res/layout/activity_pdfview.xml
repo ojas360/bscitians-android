@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pdfview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.codetrack.bscitians.PdfView"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/card_view_border"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+
+
+            <TextView
+                android:text="@string/pdf_text_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#e74c3c"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+
+
+                tools:ignore="RtlHardcoded" />
+
+
+        </LinearLayout>
+        <ImageButton
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:id="@+id/btn_share"
+            android:background="@drawable/shape7"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/ic_share_symbol"
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="@string/share1" />
+
+
+        <ImageButton
+
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:id="@+id/btn_download"
+            android:background="@drawable/shape7"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/ic_download_button"
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="@string/download"
+            />
+
+        <ImageButton
+
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:id="@+id/btn_refresh"
+            android:background="@drawable/shape7"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/ic_refresh"
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="@string/refresh"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <WebView android:id="@+id/syllabus_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

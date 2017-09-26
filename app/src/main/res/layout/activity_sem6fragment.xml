@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sem1fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".fragments.Sem6Fragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <!--- 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/it_img"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/sub"
+                        android:src="@drawable/packet"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:text="@string/packet_tracer_n_it"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/it_name"
+                        android:textSize="@dimen/title"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_size_large" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dl"
+                        android:layout_marginLeft="50dp"
+                        android:background="#2ecc71"
+                        android:textColor="#ffff"
+                        android:onClick="packet"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--- 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/gis_img"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/sub"
+                        android:src="@drawable/gis"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:text="@string/qgis_n_gis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gis_name"
+                        android:textSize="@dimen/title"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_size_large" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dl"
+                        android:layout_marginLeft="50dp"
+                        android:background="#2ecc71"
+                        android:textColor="#ffff"
+                        android:onClick="qgis"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--- 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/matlab"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/sub"
+                        android:src="@drawable/gis"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:text="@string/matlab_n_gis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gis1_name"
+                        android:textSize="@dimen/title"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_size_large" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dl"
+                        android:layout_marginLeft="50dp"
+                        android:background="#2ecc71"
+                        android:textColor="#ffff"
+                        android:onClick="mathlab"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--- 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/pm_img"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/sub"
+                        android:src="@drawable/pm"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:text="@string/star_uml_n_pm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pm_name"
+                        android:textSize="@dimen/title"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_size_large" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dl"
+                        android:layout_marginLeft="50dp"
+                        android:background="#2ecc71"
+                        android:textColor="#ffff"
+                        android:onClick="staruml"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--- 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/dw_img"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/sub"
+                        android:src="@drawable/advsql"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:text="@string/oracle_11g_n_dw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dw_name"
+                        android:textSize="@dimen/title"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_size_large" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dl"
+                        android:layout_marginLeft="50dp"
+                        android:background="#2ecc71"
+                        android:textColor="#ffff"
+                        android:onClick="oracle"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+</RelativeLayout>

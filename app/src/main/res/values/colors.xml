@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DE584D</color>
+    <color name="colorPrimaryDark">#B64032</color>
+    <color name="colorAccent">#F17A0A</color>
+    <color name="splashColor">#DE584D</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="accent">#B40808</color>
+	
+	
+<color name="description">#666666</color>
+<color name="list_divider">#d9d9d9</color>
+<color name="list_row_start_color">#ffffff</color>
+<color name="list_row_end_color">#ffffff</color>
+<color name="list_row_hover_start_color">#ebeef0</color>
+<color name="list_row_hover_end_color">#ebeef0</color>
+
+</resources>

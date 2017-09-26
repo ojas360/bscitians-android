@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "98884403655",
+    "firebase_url": "https://bscitians-e7cf0.firebaseio.com",
+    "project_id": "bscitians-e7cf0",
+    "storage_bucket": "bscitians-e7cf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98884403655:android:20b11432a4b01a89",
+        "android_client_info": {
+          "package_name": "com.codetrack.itians"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98884403655-1cq4q2m8ort0jtprjigdln5u0p237cgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCicekfuiZhAAjtOoz4o9lil0_rfyBNIrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98884403655:android:0dc7b155d88ae906",
+        "android_client_info": {
+          "package_name": "com.codetrack.bscitians"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98884403655-1cq4q2m8ort0jtprjigdln5u0p237cgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCicekfuiZhAAjtOoz4o9lil0_rfyBNIrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

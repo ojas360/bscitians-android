@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.codetrack.bscitians">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.codetrack.bscitians.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.codetrack.bscitians.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.codetrack.bscitians.util.MyFirebasemessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.codetrack.bscitians.util.FirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.codetrack.bscitians.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.codetrack.bscitians.SemestersActivity"
+            android:parentActivityName="com.codetrack.bscitians.MainActivity" />
+        <activity
+            android:name="com.codetrack.bscitians.SubjectActivity"
+            android:parentActivityName="com.codetrack.bscitians.SemestersActivity" />
+        <activity
+            android:name="com.codetrack.bscitians.PapersActivity"
+            android:parentActivityName="com.codetrack.bscitians.SubjectActivity" />
+        <activity
+            android:name="com.codetrack.bscitians.NotesActivity"
+            android:parentActivityName="com.codetrack.bscitians.SubjectActivity" />
+        <activity
+            android:name="com.codetrack.bscitians.PracticalsActivity"
+            android:parentActivityName="com.codetrack.bscitians.MainActivity" />
+        <activity
+            android:name="com.codetrack.bscitians.PdfView"
+            android:label="pdfview"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.codetrack.bscitians.SemestersActivity" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:id="@+id/action_aboutus"
+            android:name="com.codetrack.bscitians.AboutUs"
+            android:parentActivityName="com.codetrack.bscitians.SemestersActivity" />
+        <activity android:name="com.codetrack.bscitians.ComingSoon" />
+        <activity
+            android:name="com.codetrack.bscitians.ToolsActivity"
+            android:parentActivityName="com.codetrack.bscitians.MainActivity" />
+        <activity
+            android:id="@+id/feedback"
+            android:name="com.codetrack.bscitians.FeedbackForm"
+            android:parentActivityName="com.codetrack.bscitians.MainActivity"></activity>
+        <activity android:name="com.codetrack.bscitians.ProjectForm"></activity>
+    </application>
+
+</manifest>
