@@ -11,8 +11,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
+import butterknife.BindView;
+
 public class PracticalsActivity extends AppCompatActivity {
 
+    @BindView(R.id.practicals)
     public ImageButton b1;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,6 @@ public class PracticalsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.activity_practicals);
         setTitle("Practicals");
-        b1=(ImageButton)findViewById(R.id.practicals);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

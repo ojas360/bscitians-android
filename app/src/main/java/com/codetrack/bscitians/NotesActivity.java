@@ -40,13 +40,16 @@ import com.codetrack.bscitians.adapter.NotesListAdapter;
 import com.codetrack.bscitians.app.AppController;
 import com.codetrack.bscitians.model.Notes;
 
+import butterknife.BindView;
+
 public class NotesActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     private static final String url = "http://bscitians.ml/get_notes.php?subject_id=";
     private ProgressDialog pDialog;
     private List<Notes> notesList = new ArrayList<Notes>();
-    private ListView listView;
+    @BindView(R.id.list1)
+    ListView listView;
     private NotesListAdapter adapter;
     String name;
 
@@ -62,7 +65,6 @@ public class NotesActivity extends AppCompatActivity {
         isNetworkAvailable();
         String id=intent1.getStringExtra("subject_id");
 
-        listView = (ListView) findViewById(R.id.list1);
         adapter = new NotesListAdapter(this, notesList);
         listView.setAdapter(adapter);
 

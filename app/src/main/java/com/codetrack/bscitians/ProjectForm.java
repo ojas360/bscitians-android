@@ -26,18 +26,29 @@ import android.widget.Toast;
 import com.codetrack.bscitians.util.FormValidator;
 import com.codetrack.bscitians.util.SendMail;
 
+import butterknife.BindView;
+
 public class ProjectForm extends AppCompatActivity implements View.OnClickListener {
 
     private boolean projectFlag = false;
+    @BindView(R.id.complete)
     RadioButton compelte;
+    @BindView(R.id.guidance)
     RadioButton guidance;
-    private EditText name;
-    private EditText email;
-    private EditText phone;
-    private EditText description;
-    private Button Send;
-    private Spinner projectType;
-    private Spinner lang;
+    @BindView(R.id.userName)
+    EditText name;
+    @BindView(R.id.email)
+    EditText email;
+    @BindView(R.id.userPhone)
+    EditText phone;
+    @BindView(R.id.projectDescription)
+    EditText description;
+    @BindView(R.id.buttonRequest)
+    Button Send;
+    @BindView(R.id.projectTypes)
+    Spinner projectType;
+    @BindView(R.id.language)
+    Spinner lang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,16 +56,8 @@ public class ProjectForm extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_project_form);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        name = (EditText) findViewById(R.id.userName);
-        email = (EditText) findViewById(R.id.userEmail);
-        phone = (EditText) findViewById(R.id.userPhone);
-        projectType = (Spinner) findViewById(R.id.projectTypes);
-        lang = (Spinner) findViewById(R.id.language);
-        description = (EditText) findViewById(R.id.projectDescription);
 
 
-
-        compelte = (RadioButton) findViewById(R.id.compelte);
         compelte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +65,6 @@ public class ProjectForm extends AppCompatActivity implements View.OnClickListen
             }
         });
 
-        guidance = (RadioButton) findViewById(R.id.guidance);
         guidance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +72,6 @@ public class ProjectForm extends AppCompatActivity implements View.OnClickListen
             }
         });
 
-        Send = (Button) findViewById(R.id.buttonRequest);
         Send.setOnClickListener(this);
 
         setTitle("Request Project");

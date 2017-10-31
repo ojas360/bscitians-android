@@ -40,13 +40,16 @@ import com.codetrack.bscitians.adapter.PapersListAdapter;
 import com.codetrack.bscitians.app.AppController;
 import com.codetrack.bscitians.model.Papers;
 
+import butterknife.BindView;
+
 public class PapersActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
      private static final String url = "http://bscitians.ml/get_papers.php?subject_id=";
      private ProgressDialog pDialog;
      private List<Papers> papersList = new ArrayList<Papers>();
-     private ListView listView;
+     @BindView(R.id.list)
+     ListView listView;
      private PapersListAdapter adapter;
      String name;
 
@@ -62,7 +65,6 @@ public class PapersActivity extends AppCompatActivity {
         Intent intent1=getIntent();
         String id=intent1.getStringExtra("subject_id");
         name= intent1.getStringExtra("name");
-        listView = (ListView) findViewById(R.id.list);
         adapter = new PapersListAdapter(this, papersList);
         listView.setAdapter(adapter);
 

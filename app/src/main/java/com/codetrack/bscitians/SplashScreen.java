@@ -7,12 +7,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import butterknife.ButterKnife;
+
 public class SplashScreen extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        //Butterknife Instance
+        ButterKnife.bind(this);
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         //Remove title bar

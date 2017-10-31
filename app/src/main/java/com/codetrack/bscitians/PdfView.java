@@ -46,13 +46,19 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import butterknife.BindView;
+
 
 public class PdfView extends AppCompatActivity {
 
     Context context;
+    @BindView(R.id.btn_download)
     ImageButton download;
+    @BindView(R.id.btn_refresh)
     ImageButton refresh;
+    @BindView(R.id.btn_share)
     ImageButton share;
+    @BindView(R.id.syllabus_viewer)
     WebView pdfviews;
     Resources res;
     String url = "";
@@ -111,11 +117,7 @@ public class PdfView extends AppCompatActivity {
             this.name = extras.getString("name");
         }
         setTitle(this.name);
-        this.pdfviews = (WebView) findViewById(R.id.syllabus_viewer);
         this.pdfviews.setWebViewClient(new WebViewClient());
-        this.refresh = (ImageButton) findViewById(R.id.btn_refresh);
-        this.share = (ImageButton) findViewById(R.id.btn_share);
-        this.download = (ImageButton) findViewById(R.id.btn_download);
         this.pdfviews.getSettings().setJavaScriptEnabled(true);
         this.pdfviews.getSettings().setBuiltInZoomControls(true);
         this.pdfviews.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);

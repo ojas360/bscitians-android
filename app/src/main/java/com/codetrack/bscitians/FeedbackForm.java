@@ -26,19 +26,26 @@ import com.codetrack.bscitians.util.SendMail;
 
 import java.util.regex.Pattern;
 
+import butterknife.BindView;
+
 public class FeedbackForm extends AppCompatActivity implements View.OnClickListener {
 
     //Declaring EditText
-    private EditText editTextEmail;
-    private EditText editTextSubject;
-    private EditText editTextMessage;
+    @BindView(R.id.editTextEmail)
+    EditText editTextEmail;
 
-    private Button buttonSend;
+    @BindView(R.id.editTextSubject)
+    EditText editTextSubject;
+
+    @BindView(R.id.editTextMessage)
+    EditText editTextMessage;
+
+    @BindView(R.id.buttonSend)
+    Button buttonSend;
 
     @Override
     public void onClick(View v) {
         isNetworkAvailable();
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         if ( checkFormValidator() )
            sendEmail();
         else
@@ -50,12 +57,6 @@ public class FeedbackForm extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed_back_form);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //Initializing the views
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextSubject = (EditText) findViewById(R.id.editTextSubject);
-        editTextMessage = (EditText) findViewById(R.id.editTextMessage);
-
-        buttonSend = (Button) findViewById(R.id.buttonSend);
         buttonSend.setOnClickListener(this);
 
         setTitle("Feedback Form");

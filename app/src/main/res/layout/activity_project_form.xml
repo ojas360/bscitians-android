@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginBottom="10dp"
-            android:checkedButton="@+id/compelte"
+            android:checkedButton="@+id/complete"
             android:layout_marginTop="15dp"
             >
         <TextView
@@ -146,7 +146,7 @@
                 />
 
             <RadioButton
-                android:id="@+id/compelte"
+                android:id="@+id/complete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/completeProj"

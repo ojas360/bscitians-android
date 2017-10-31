@@ -23,11 +23,15 @@ import  com.codetrack.bscitians.fragments.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+
 
 public class ToolsActivity extends AppCompatActivity {
 
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
+    @BindView(R.id.tabs)
+    TabLayout tabLayout;
+    @BindView(R.id.viewpager)
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +40,7 @@ public class ToolsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.tools_activity);
         setTitle("Tools and Softwares");
-
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
     }

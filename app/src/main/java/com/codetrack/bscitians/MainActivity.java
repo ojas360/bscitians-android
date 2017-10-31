@@ -15,16 +15,28 @@ import android.widget.Toast;
 
 import com.codetrack.bscitians.util.RuntimePermission;
 
+import butterknife.BindView;
+
 public class MainActivity extends RuntimePermission {
     // cretaing variable of buttons
     private static final int REQUEST_PERMISSION=10;
     boolean doubleBackToExitPressedOnce = false;
-    public ImageButton syllabus,questionpaper,program,notes,tools,tutorials;
+    @BindView(R.id.syllabus)
+    ImageButton syllabus;
+    @BindView(R.id.questionPapers)
+    ImageButton questionpaper;
+    @BindView(R.id.practicals)
+    ImageButton program;
+    @BindView(R.id.notes)
+    ImageButton notes;
+    @BindView(R.id.tools)
+    ImageButton tools;
+    @BindView(R.id.tutorials)
+    ImageButton tutorials;
 
     MediaPlayer btnClick;
 
     public void init(){
-        syllabus=(ImageButton)findViewById(R.id.syllabus);
         syllabus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +49,6 @@ public class MainActivity extends RuntimePermission {
                 startActivity(pass);
             }
         });
-        questionpaper=(ImageButton)findViewById(R.id.questionPapers) ;
         questionpaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +60,6 @@ public class MainActivity extends RuntimePermission {
             }
         });
 
-        notes=(ImageButton)findViewById(R.id.notes);
         notes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +70,6 @@ public class MainActivity extends RuntimePermission {
                 startActivity(pass);
             }
         });
-        program=(ImageButton)findViewById(R.id.practicals);
         program.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +80,6 @@ public class MainActivity extends RuntimePermission {
             }
         });
 
-        tutorials=(ImageButton)findViewById(R.id.tutorials);
         tutorials.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +89,6 @@ public class MainActivity extends RuntimePermission {
                 startActivity(pass);
             }
         });
-        tools=(ImageButton)findViewById(R.id.tools);
         tools.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

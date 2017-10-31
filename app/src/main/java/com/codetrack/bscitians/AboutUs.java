@@ -11,8 +11,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import butterknife.BindView;
+
 public class AboutUs extends AppCompatActivity {
 
+    @BindView(R.id.about_content)
     TextView about;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,6 @@ public class AboutUs extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.activity_about_us);
         setTitle("About us -Bscitians");
-        this.about = (TextView) findViewById(R.id.about_content);
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
             this.about.setText(Html.fromHtml("<h3><b>Application for Bsc-It Students</h3>" +
                     "MUMBAI UNIVERSITY</font></b>\n" +

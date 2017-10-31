@@ -35,6 +35,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
 
+import butterknife.BindView;
+
 public class SubjectActivity extends AppCompatActivity {
     private static final String TAG = SubjectActivity.class.getSimpleName();
     int semid;
@@ -42,7 +44,8 @@ public class SubjectActivity extends AppCompatActivity {
     private static final String url = "http://bscitians.ml/get_subjects.php?sem_id=";
     private ProgressDialog pDialog;
     private List<Subjects> subjectsList = new ArrayList<Subjects>();
-    private ListView listView;
+    @BindView(R.id.list)
+    ListView listView;
     private SubjectsListAdapter adapter;
 
     @Override
@@ -58,7 +61,6 @@ public class SubjectActivity extends AppCompatActivity {
         semid = Integer.parseInt(intent.getStringExtra("sem_id"));
         this.screenName = intent.getStringExtra("screen");
 
-        listView = (ListView) findViewById(R.id.list);
         adapter = new SubjectsListAdapter(this, subjectsList);
         listView.setAdapter(adapter);
 

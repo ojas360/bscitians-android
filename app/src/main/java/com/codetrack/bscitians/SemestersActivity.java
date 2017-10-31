@@ -13,10 +13,23 @@ import android.widget.Button;
 
 import org.json.JSONObject;
 
+import butterknife.BindView;
+
 public class SemestersActivity extends AppCompatActivity {
     String Json_STRING,Json_url;
     JSONObject jsonObject;
-    public Button s1,s2,s3,s4,s5,s6;
+    @BindView(R.id.sem1)
+    Button s1;
+    @BindView(R.id.sem2)
+    Button s2;
+    @BindView(R.id.sem3)
+    Button s3;
+    @BindView(R.id.sem4)
+    Button s4;
+    @BindView(R.id.sem5)
+    Button s5;
+    @BindView(R.id.sem6)
+    Button s6;
     String name="Semesters",screen;
 
     public void init(){
@@ -31,7 +44,6 @@ public class SemestersActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.activity_semesters);
-        s1=(Button)findViewById(R.id.sem1);
         s1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +65,6 @@ public class SemestersActivity extends AppCompatActivity {
             }
         });
 
-        s2=(Button)findViewById(R.id.sem2);
         s2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,7 +86,6 @@ public class SemestersActivity extends AppCompatActivity {
             }
         });
 
-        s3=(Button)findViewById(R.id.sem3);
         s3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,7 +107,6 @@ public class SemestersActivity extends AppCompatActivity {
             }
         });
 
-        s4=(Button)findViewById(R.id.sem4);
         s4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +128,6 @@ public class SemestersActivity extends AppCompatActivity {
             }
         });
 
-        s5=(Button)findViewById(R.id.sem5);
         s5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,7 +149,6 @@ public class SemestersActivity extends AppCompatActivity {
             }
         });
 
-        s6=(Button)findViewById(R.id.sem6);
         s6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
